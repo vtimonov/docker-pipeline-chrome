@@ -28,7 +28,8 @@ RUN apt-get -qqy update \
     tzdata \
     sudo \
     unzip \
-    wget
+    wget \
+    git
 
 #===================
 # Timezone settings
