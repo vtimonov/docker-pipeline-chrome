@@ -9,8 +9,6 @@ MAINTAINER Viacheslav Timonov <tsmaggot@gmail.com>
 #================================================
 # Customize sources for apt-get
 #================================================
-RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
-
 RUN  echo "deb http://archive.ubuntu.com/ubuntu xenial main universe\n" > /etc/apt/sources.list \
      && echo "deb http://archive.ubuntu.com/ubuntu xenial-updates main universe\n" >> /etc/apt/sources.list \
      && echo "deb http://security.ubuntu.com/ubuntu xenial-security main universe\n" >> /etc/apt/sources.list
@@ -30,7 +28,8 @@ RUN apt-get -qqy update \
     tzdata \
     sudo \
     unzip \
-    wget
+    wget \
+    apt-utils
 
 #===================
 # Timezone settings
