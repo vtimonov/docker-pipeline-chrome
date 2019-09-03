@@ -1,2 +1,2 @@
 # docker-pipeline-chrome
-Execution of maven tests in the docker container 
+Execution of maven tests in the docker container.
